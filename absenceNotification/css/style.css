@@ -8,3 +8,55 @@
 input{
     font-size: 28px;
 }
+label{
+    font-size: 22px;
+    margin-right: 50px;
+}
+
+/*********ボタン***************/
+.checkbox-3 {
+    border: none;
+}
+
+.checkbox-3 label {
+
+    align-items: center;
+    gap: 0 .5em;
+    position: relative;
+    max-width: 200px;
+    margin-bottom: .4em;
+    padding: .5em .7em;
+    border: 1px solid #727272;
+    border-radius: 3px;
+    background-color: #4d4d4d26;
+    cursor: pointer;
+}
+
+.checkbox-3 label:has(:checked) {
+    background-color: #727272;
+    color: #fff;
+}
+
+.checkbox-3 label::before {
+    width: 14px;
+    height: 14px;
+    border-radius: 1px;
+    background-color: #fff;
+    content: '';
+}
+
+.checkbox-3 label:has(:checked)::after {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    transform: rotate(45deg);
+    width: 4px;
+    height: 8px;
+    border: solid #727272;
+    border-width: 0 2px 2px 0;
+    content: '';
+}
+
+.checkbox-3 input {
+    display: none;
+}

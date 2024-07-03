@@ -3,7 +3,7 @@
         <title>届け出フォーム</title>
         <link rel="stylesheet" href="css/style.css"> 
     </head>
-    <body>
+    <body style="margin: 0 150px;">
         <center>
             <h1>欠席・遅刻・早退届　提出</h1>
             <form action="../success/success.html">
@@ -15,34 +15,54 @@
                     番号：<input type="text" name="studentNumber" style="border-left: 0;border-right: 0; width: 40px;"></h3>
                 </div>
                 <div>
-                    <label for="hour1">
-                        <input type="checkbox" id="hour1" class="hour">
-                        １限目
-                    </label>
-                    <label for="hour2">
-                        <input type="checkbox" id="hour2" class="hour">
-                        ２限目
-                    </label>
-                    <label for="hour3">
-                        <input type="checkbox" id="hour3" class="hour">
-                        ３限目
-                    </label>
-                    <label for="hour4">
-                        <input type="checkbox" id="hour4" class="hour">
-                        ４限目
-                    </label>
-                    <label for="hour5">
-                        <input type="checkbox" id="hour5" class="hour">
-                        ５限目
-                    </label>
-                    <label for="hour6">
-                        <input type="checkbox" id="hour6" class="hour">
-                        ６限目
-                    </label>
+                    <fieldset class="checkbox-3">
+                        <label for="hour1">
+                            <input type="checkbox" id="hour1" name="checkbox-3" class="hour">
+                            １限目
+                        </label>
+                        <label for="hour2">
+                            <input type="checkbox" id="hour2" name="checkbox-3" class="hour">
+                            ２限目
+                        </label>
+                        <label for="hour3">
+                            <input type="checkbox" id="hour3" name="checkbox-3" class="hour">
+                            ３限目
+                        </label>
+                        <label for="hour4">
+                            <input type="checkbox" id="hour4" name="checkbox-3" class="hour">
+                            ４限目
+                        </label>
+                        <label for="hour5">
+                            <input type="checkbox" id="hour5" name="checkbox-3" class="hour">
+                            ５限目
+                        </label>
+                        <label for="hour6">
+                            <input type="checkbox" id="hour6" name="checkbox-3" class="hour">
+                            ６限目
+                        </label>
+                    </fieldset>
                 </div>
                 <div>
+                    <p style="font-size: 23px;text-align: left;">理由：</p>
                     <textarea name="reason" class="reason"></textarea>
                 </div>
+                <h3>上記の理由のため</h3>
+                <fieldset class="checkbox-3">
+                    <label for="absence">
+                        <input type="checkbox" id="absence" name="checkbox-3" class="absence">
+                        欠席
+                    </label>
+                    <label for="behind">
+                        <input type="checkbox" id="behind" name="checkbox-3" class="behind">
+                        遅刻
+                    </label>
+                    <label for="leaving">
+                        <input type="checkbox" id="leaving" name="checkbox-3" class="leaving">
+                        早退
+                    </label>
+                    
+                </fieldset>
+                <h3>いたします。</h3>
                 <input type="submit" value="確定">
             </form>
         </center>
