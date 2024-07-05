@@ -6,22 +6,22 @@
     <body style="margin: 0 150px;">
         <center>
             <h1>欠席・遅刻・早退届　提出</h1>
-            <form action="../success/success.html">
+            <form action="success/success.html">
                 <div>
                 <h3>
-                    学科：<input type="text" name="studentDepartment" style="border-left: 0;border-right: 0;" value="">
-                    学科：<input type="text" name="course" style="border-left: 0;border-right: 0;width:200px;" value="">
-                    学年：<input type="text" name="schoolYear" style="border-left: 0;border-right: 0; width: 30px;" value="">
+                    学科：<input type="text" name="studentDepartment" style="border-left: 0;border-right: 0;" value="スペ">
+                    コース：<input type="text" name="course" style="border-left: 0;border-right: 0;width:200px;" value="">
+                    学年：<input type="text" name="schoolYear" style="border-left: 0;border-right: 0; width: 30px;" value="3">
                     組：<input type="text" name="departmentSet" style="border-left: 0;border-right: 0; width: 70px;" value="">
-                    番号：<input type="text" name="studentNumber" style="border-left: 0;border-right: 0; width: 40px;" value=""></h3>
-                    名前：<input type="text" name="studentName" style="border-left: 0;border-right: 0;" value=""><br><br>
-                    該当日時：<input type="text" name="studentNumber" style="border-left: 0;border-right: 0; width: 100px;" value="">年
-                    <input type="text" name="studentNumber" style="border-left: 0;border-right: 0; width: 40px;" value="">月
-                    <input type="text" name="studentNumber" style="border-left: 0;border-right: 0; width: 40px;" value="">日
-                </h3>
+                    番号：<input type="text" name="studentNumber" style="border-left: 0;border-right: 0; width: 40px;" value="1"></h3>
+                    名前：<input type="text" name="studentName" style="border-left: 0;border-right: 0;" value="青木"><br><br>
+                    該当日時：<input type="text" name="studentNumber" style="border-left: 0;border-right: 0; width: 100px;" value="2024">年
+                    <input type="text" name="studentNumber" style="border-left: 0;border-right: 0; width: 40px;" value="12">月
+                    <input type="text" name="studentNumber" style="border-left: 0;border-right: 0; width: 40px;" value="24">日
+                    </h3>
                 </div>
                 <div>
-                    <fieldset class="checkbox-3"style="margin:80px 0 ;">
+                    <fieldset class="checkbox-3" style="margin:100px 0 ;">
                         <label for="hour1">
                             <input type="checkbox" id="hour1" name="checkbox-3" class="hour">
                             １限目
@@ -35,22 +35,22 @@
                             ３限目
                         </label>
                         <label for="hour4">
-                            <input type="checkbox" id="hour4" name="checkbox-3" class="hour">
+                            <input type="checkbox" id="hour4" name="checkbox-3" class="hour" checked>
                             ４限目
                         </label>
                         <label for="hour5">
-                            <input type="checkbox" id="hour5" name="checkbox-3" class="hour">
+                            <input type="checkbox" id="hour5" name="checkbox-3" class="hour"checked>
                             ５限目
                         </label>
                         <label for="hour6">
-                            <input type="checkbox" id="hour6" name="checkbox-3" class="hour">
+                            <input type="checkbox" id="hour6" name="checkbox-3" class="hour" checked>
                             ６限目
                         </label>
                     </fieldset>
                 </div>
                 <div>
-                    <p style="font-size: 23px;text-align: left;">理由：</p>
-                    <textarea name="reason" class="reason"></textarea>
+                    <p style="font-size: 23px;text-align: left;margin:0;">理由：</p>
+                    <textarea name="reason" class="reason"rows="3">病院に通院するため、午前中に遅刻します。</textarea>
                 </div>
                 <h3>上記の理由のため</h3>
                 <fieldset class="checkbox-3">
@@ -59,7 +59,7 @@
                         欠席
                     </label>
                     <label for="behind">
-                        <input type="checkbox" id="behind" name="checkbox-3" class="behind">
+                        <input type="checkbox" id="behind" name="checkbox-3" class="behind" checked>
                         遅刻
                     </label>
                     <label for="leaving">
