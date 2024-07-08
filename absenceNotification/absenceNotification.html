@@ -3,14 +3,14 @@
         <title>届け出フォーム</title>
         <link rel="stylesheet" href="css/style.css"> 
     </head>
-    <body style="margin: 0 150px;">
+    <body style="margin: 0 auto;">
         <center>
-            <h1>欠席・遅刻・早退届　提出</h1>
+            <h1>欠席・遅刻・早退届提出</h1>
             <form action="../success/success.html">
                 <div>
                 <h3>
                     学科：<input type="text" name="studentDepartment" style="border-left: 0;border-right: 0;" value="">
-                    学科：<input type="text" name="course" style="border-left: 0;border-right: 0;width:200px;" value="">
+                    コース：<input type="text" name="course" style="border-left: 0;border-right: 0;width:200px;" value="">
                     学年：<input type="text" name="schoolYear" style="border-left: 0;border-right: 0; width: 30px;" value="">
                     組：<input type="text" name="departmentSet" style="border-left: 0;border-right: 0; width: 70px;" value="">
                     番号：<input type="text" name="studentNumber" style="border-left: 0;border-right: 0; width: 40px;" value=""></h3>
@@ -52,27 +52,30 @@
                     <p style="font-size: 23px;text-align: left;">理由：</p>
                     <textarea name="reason" class="reason"></textarea>
                 </div>
-                <h3>上記の理由のため</h3>
                 <fieldset class="checkbox-3">
+                <h3>上記の理由のため
                     <label for="absence">
-                        <input type="checkbox" id="absence" name="checkbox-3" class="absence">
+                        <input type="radio" id="absence" name="checkbox-3" class="absence">
                         欠席
                     </label>
                     <label for="behind">
-                        <input type="checkbox" id="behind" name="checkbox-3" class="behind">
+                        <input type="radio" id="behind" name="checkbox-3" class="behind">
                         遅刻
                     </label>
                     <label for="leaving">
-                        <input type="checkbox" id="leaving" name="checkbox-3" class="leaving">
+                        <input type="radio" id="leaving" name="checkbox-3" class="leaving">
                         早退
                     </label>
+                いたします。</h3>
                     
                 </fieldset>
-                <h3>いたします。</h3>
                 <input type="submit" value="確定">
             </form>
             <br><br><br>
             <a href="../index/index.html">TOP</a>
+            <footer style="margin-top: 66px;">
+            &copy; 2021 わっくわくプログラミング講座
+            </footer>
         </center>
     </body>
     <script>

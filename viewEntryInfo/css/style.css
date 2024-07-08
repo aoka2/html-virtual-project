@@ -59,3 +59,8 @@ label{
 .checkbox-3 input {
     display: none;
 }
+body{
+    width: 1000px;
+    position: relative;
+	padding-bottom: 3rem;
+}

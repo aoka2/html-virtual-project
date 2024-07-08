@@ -4,9 +4,32 @@
     </head>
     <body>
         <center>
-            <button onclick="location.href='../absenceNotification/absenceNotification.html'">欠席・遅刻・早退届　提出</button><br>
-            <button>公欠届　提出</button><br>
-            <button onclick="location.href='../viewEntryInfo/viewEntryInfo.html'">一覧検索</button>
+            <button class="button-2"onclick="location.href='../absenceNotification/absenceNotification.html'">欠席・遅刻・早退届　提出</button><br>
+            <button class="button-2">公欠届　提出</button><br>
+            <button class="button-2" onclick="location.href='../viewEntryInfo/viewEntryInfo.html'">一覧検索</button>
+            <footer style="margin-top: 670px;">
+            &copy; 2021 わっくわくプログラミング講座
+            </footer>
         </center>
     </body>
+    <style>
+    .button-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    margin:0 auto;
+    padding: .9em 2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #c2c2c2;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.button-2:hover {
+    background-color: #b2b2b2;
+}
+    </style>
 </html>

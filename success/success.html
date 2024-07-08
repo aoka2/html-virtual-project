@@ -1,24 +1,89 @@
 <html>
     <head>
-        <title>欠席・遅刻・早退届　提出</title>
+        <title>届け出フォーム</title>
+        <link rel="stylesheet" href="style.css"> 
     </head>
-    <center>
-    <form action="send.html" method="post">
-    <h1>欠席・遅刻・早退届　提出</h1>
-    <h2>
-        ＜番号：学科：名前：届け出種類：日付＞
-    </h2>
-    <h3>
-        １ スペ 青木 遅刻届け 2024/12/24
-    </h3>
-    <h2>＜時間＞</h2>
-    <h3>1限目, ２限目, ３限目</h3>
-    <h2>＜理由＞</h2>
-    <h3 style="border: 1px solid black; width: 600px;height: 100px;">病院に通院するため、午前中に遅刻します。</h3>
-    <h2>上記の理由のため遅刻いたします。</h2>
-    <input type="submit" name="submit" value="送信">
-    </form>
-<br><br><br>
-    <a href="../index/index.html">TOP</a>
-</center>
+    <body style="margin: 0 auto;">
+        <center>
+            <h1>欠席・遅刻・早退届提出</h1>
+            <form action="send.html">
+                <div>
+                <h3>
+                    学科：<input type="text" name="studentDepartment" style="border-left: 0;border-right: 0;" value="スペ"disabled>
+                    コース：<input type="text" name="course" style="border-left: 0;border-right: 0;width:200px;" value=""disabled>
+                    学年：<input type="text" name="schoolYear" style="border-left: 0;border-right: 0; width: 30px;" value="3"disabled>
+                    組：<input type="text" name="departmentSet" style="border-left: 0;border-right: 0; width: 70px;" value=""disabled>
+                    番号：<input type="text" name="studentNumber" style="border-left: 0;border-right: 0; width: 40px;" value="1"disabled></h3>
+                    名前：<input type="text" name="studentName" style="border-left: 0;border-right: 0;" value="青木"disabled><br><br>
+                    該当日時：<input type="text" name="studentNumber" style="border-left: 0;border-right: 0; width: 100px;" value="2024"disabled>年
+                    <input type="text" name="studentNumber" style="border-left: 0;border-right: 0; width: 40px;" value="12"disabled>月
+                    <input type="text" name="studentNumber" style="border-left: 0;border-right: 0; width: 40px;" value="24"disabled>日
+                </h3>
+                </div>
+                <div>
+                    <fieldset class="checkbox-3"style="margin:80px 0 ;">
+                        <label for="hour1">
+                            <input type="checkbox" id="hour1" name="checkbox-3" class="hour"disabled>
+                            １限目
+                        </label>
+                        <label for="hour2">
+                            <input type="checkbox" id="hour2" name="checkbox-3" class="hour"disabled>
+                            ２限目
+                        </label>
+                        <label for="hour3">
+                            <input type="checkbox" id="hour3" name="checkbox-3" class="hour"disabled>
+                            ３限目
+                        </label>
+                        <label for="hour4">
+                            <input type="checkbox" id="hour4" name="checkbox-3" checked class="hour"disabled>
+                            ４限目
+                        </label>
+                        <label for="hour5">
+                            <input type="checkbox" id="hour5" name="checkbox-3" checked class="hour"disabled>
+                            ５限目
+                        </label>
+                        <label for="hour6">
+                            <input type="checkbox" id="hour6" name="checkbox-3" checked class="hour"disabled>
+                            ６限目
+                        </label>
+                    </fieldset>
+                </div>
+                <div>
+                    <p style="font-size: 23px;text-align: left;">理由：</p>
+                    <textarea name="reason" class="reason"disabled>病院に通院するため、午前中に遅刻します。</textarea>
+                </div>
+                <fieldset class="checkbox-3">
+                <h3>上記の理由のため
+                    <label for="absence">
+                        <input type="radio" id="absence" name="checkbox-3" class="absence"disabled>
+                        欠席
+                    </label>
+                    <label for="behind">
+                        <input type="radio" id="behind" name="checkbox-3" checked class="behind"disabled>
+                        遅刻
+                    </label>
+                    <label for="leaving">
+                        <input type="radio" id="leaving" name="checkbox-3" class="leaving"disabled>
+                        早退
+                    </label>
+                いたします。</h3>
+                    
+                </fieldset>
+                <input type="submit" value="送信">
+            </form>
+            <br><br><br>
+            <a href="../index/index.html">TOP</a>
+            <footer style="margin-top: 66px;">
+            &copy; 2021 わっくわくプログラミング講座
+            </footer>
+        </center>
+    </body>
+    <script>
+        let elements = document.getElementsByClassName('hour');
+        for (let i = 0; i < elements.length; i++) {
+            elements[i].addEventListener('event', function(event) {
+                event.target.style.outline = '2px solid deeppink';
+            });
+        }
+    </script>
 </html>
